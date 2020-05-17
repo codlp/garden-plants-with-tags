@@ -1,0 +1,11 @@
+<h1>Gardens</h1>
+
+<ul>>
+  <% @gardens.each do |garden| %>
+    <%= link_to garden_path(garden) do %>
+      <li><%= garden.name %> <%= link_to 'Show', garden %> <%= link_to 'Edit', edit_garden_path(garden) %> <%= link_to 'Destroy', garden, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to 'New Garden', new_garden_path %>
