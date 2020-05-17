@@ -1,0 +1,2 @@
+class PlantTagsController < ApplicationController
+end

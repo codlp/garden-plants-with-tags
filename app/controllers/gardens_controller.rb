@@ -36,6 +36,6 @@ class GardensController < ApplicationController
     end
 
     def garden_params
-      params.require(:garden).permit(:name, :banner_url)
+      params.require(:garden).permit(:name, :picture)
     end
 end
